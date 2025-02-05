@@ -1,0 +1,208 @@
+/* Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/*  Style global */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6d85b1, #60759a); /* Dégradé dynamique */
+    color: #ffffff;
+    font-size: 1.1em; /* Augmenter la taille globale */
+}
+
+/*  En-tête */
+#header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 3em; /* Taille de police augmentée */
+    letter-spacing: 2px;
+}
+
+/* Ajout d'icônes au titre */
+#header h1::before {
+    content: "\1F680 "; /* Fusée 🚀 */
+}
+
+/*  Menu de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f8d210;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em; /* Taille de police augmentée */
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Ajout d'icônes aux liens du menu */
+nav ul li a::before {
+    font-family: "FontAwesome";
+    margin-right: 8px;
+}
+
+nav ul li:first-child a::before { content: "\f015"; } /* Maison 🏠 */
+nav ul li:nth-child(2) a::before { content: "\f02d"; } /* Livre 📖 */
+nav ul li:nth-child(3) a::before { content: "\f2b9"; } /* Utilisateur 👤 */
+
+/* 🎨 Effet hover sur les liens */
+nav ul li a:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* 🌟 Introduction */
+#intro {
+    text-align: center;
+    padding: 50px;
+}
+
+#intro img {
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🎨 Zoom au survol */
+#intro img:hover {
+    transform: scale(1.05);
+}
+
+/* 🌟 Articles */
+#articles {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#articles h2 {
+    text-align: center;
+    background: linear-gradient(90deg, #f8d210, #ff6f61);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 2.5em; /* Taille de police augmentée */
+}
+
+/* Ajout d'emoji au titre des articles */
+#articles h2::before {
+    content: "\1F4F0 "; /* Journal 📰 */
+}
+
+/*  Style des articles */
+article {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    max-width: 800px;
+    position: relative;
+}
+
+article h3 {
+    font-size: 1.8em; /* Taille de police augmentée */
+}
+
+/* 🎨 Effet au survol */
+article:hover {
+    transform: translateY(-5px);
+}
+
+/*  Images des articles */
+article img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajout d'icônes aux titres des articles */
+article h3::before {
+    content: "\1F4DD "; /* Bloc-notes 📝 */
+    margin-right: 5px;
+}
+
+/*  Titres des articles */
+article h3 a {
+    text-decoration: none;
+    color: #f8d210;
+    transition: color 0.3s ease-in-out;
+}
+
+article h3 a:hover {
+    color: #ff6f61;
+}
+
+/*  Section "À propos" */
+#about {
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#about h2 {
+    background: linear-gradient(90deg, #28a745, #17a2b8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2.2em; /* Taille de police augmentée */
+}
+
+/* Ajout d'emoji au titre "À propos" */
+#about h2::before {
+    content: "\1F4AC "; /* Bulle de dialogue 💬 */
+}
+
+/*  Pied de page */
+#footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    position: relative;
+}
+
+#footer a {
+    color: #f8d210;
+    text-decoration: none;
+    font-size: 1.2em; /* Taille de police augmentée */
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ajout d'emoji au pied de page */
+#footer::before {
+    content: "\2728 " " Merci de votre visite ! " "\2728"; /* Étoiles ✨ */
+    display: block;
+    font-size: 1.5em; /* Taille de police augmentée */
+    margin-bottom: 10px;
+}
