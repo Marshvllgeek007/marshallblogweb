@@ -109,7 +109,7 @@ nav ul li a:hover {
     content: "\1F4F0 "; /* Journal 📰 */
 }
 
-/*  Style des articles */
+/* 🌟 Style des articles */
 article {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -130,7 +130,7 @@ article:hover {
     transform: translateY(-5px);
 }
 
-/*  Images des articles */
+/* 🌟 Images des articles */
 article img {
     max-width: 100%;
     border-radius: 10px;
@@ -147,7 +147,7 @@ article h3::before {
     margin-right: 5px;
 }
 
-/*  Titres des articles */
+/* 🌟 Titres des articles */
 article h3 a {
     text-decoration: none;
     color: #f8d210;
@@ -158,7 +158,8 @@ article h3 a:hover {
     color: #ff6f61;
 }
 
-/*  Section "À propos" */
+
+/* 🌟 Section "À propos" */
 #about {
     padding: 50px;
     text-align: center;
@@ -180,7 +181,7 @@ article h3 a:hover {
     content: "\1F4AC "; /* Bulle de dialogue 💬 */
 }
 
-/*  Pied de page */
+/* 🌟 Pied de page */
 #footer {
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
