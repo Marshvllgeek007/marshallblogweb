@@ -53,6 +53,37 @@
             <p>Nous explorerons l'histoire des navigateurs, de la première version de Mosaic à l'avènement des géants modernes comme Google Chrome et Mozilla Firefox, et comment ils ont façonné l'expérience utilisateur sur le Web.</p>
         </article>
     </section>
+    <section id="about">
+        <h2>À propos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Année</th>
+                    <th>Événement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1989</td>
+                    <td>Naissance du World Wide Web par Tim Berners-Lee</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>Sortie du premier navigateur Web "Mosaic"</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Création de Facebook</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>Lancement de Google Chrome</td>
+                </tr>
+            </tbody>
+        </table>
+        <TD HEIGHT="10%"></TD>
+    </section>
+    
 
     <section id="about" class="container">
         <h2>À propos de moi</h2>
@@ -61,6 +92,36 @@
         <p>Email : marshallkpessopa@gmail.com</p>
         <p>Téléphone : +229 01 610 059 88</p>
     </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit.php" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="prenom">Prénoms :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="services">Service à contacter :</label>
+            <select id="services" name="services">
+                <option value="support">Support</option>
+                <option value="commercial">Commercial</option>
+                <option value="technique">Technique</option>
+            </select>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label>
+                <input type="checkbox" name="newsletter"> S'inscrire à la newsletter
+            </label>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
 
     <footer id="footer">
         <p>Réalisé par Marshall Chedid TAMPOUHOUNRO - Copyright 2025. Tous droits réservés.</p>
@@ -78,5 +139,6 @@
             </a> 
         </p>
     </footer>
+    
 </body>
 </html>
